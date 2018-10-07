@@ -24,7 +24,7 @@ class MasterBranch {
       //  - '7.x-1.x'
       //  - '7.x'
       //  - '8.0.x'
-      if (preg_match("@(\d.x-\d+-x|\d.x|\d.\d+.x)@", $branch)) {
+      if (preg_match("@^(\d\.x-\d+-x|\d\.x|\d\.\d+\.x)@", $branch)) {
         $this->branchName = trim($branch);
 
         $found = TRUE;
